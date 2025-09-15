@@ -1,8 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Playfair_Display, Manrope } from "next/font/google"
-import { GeistMono } from "geist/font/mono"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Suspense } from "react"
 
@@ -32,9 +30,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-serif ${playfairDisplay.variable} ${manrope.variable} ${GeistMono.variable} antialiased`}>
+      <body className={`font-sans ${playfairDisplay.variable} ${manrope.variable} antialiased`}>
         <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
       </body>
     </html>
   )
