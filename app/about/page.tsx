@@ -5,29 +5,29 @@ import Link from "next/link"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-amber-50">
       {/* Navigation */}
-      <nav className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+      <nav className="border-b border-pink-100 bg-pink-50/95 backdrop-blur supports-[backdrop-filter]:bg-pink-50/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <span className="text-2xl">👑</span>
-              <span className="font-sans text-xl font-bold text-foreground">Only for Princesses™</span>
+              <span className="font-sans text-xl font-bold text-gray-900">Only for Princesses™</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/" className="text-gray-700 hover:text-pink-600 transition-colors">
                 Home
               </Link>
-              <Link href="/collections" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/collections" className="text-gray-700 hover:text-pink-600 transition-colors">
                 Collections
               </Link>
-              <Link href="/stories" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/stories" className="text-gray-700 hover:text-pink-600 transition-colors">
                 Stories
               </Link>
-              <Link href="/about" className="text-accent font-medium">
+              <Link href="/about" className="text-pink-600 font-medium">
                 About
               </Link>
-              <Link href="/blog" className="text-foreground hover:text-accent transition-colors">
+              <Link href="/blog" className="text-gray-700 hover:text-pink-600 transition-colors">
                 Blog
               </Link>
             </div>
@@ -35,7 +35,11 @@ export default function AboutPage() {
               <Button variant="ghost" size="sm">
                 💖
               </Button>
-              <Button variant="outline" size="sm">
+              <Button
+                variant="outline"
+                size="sm"
+                className="border-pink-200 text-pink-700 hover:bg-pink-50 bg-transparent"
+              >
                 Cart (0)
               </Button>
             </div>
@@ -47,7 +51,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-pink-50 via-rose-50 to-amber-50 py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-amber-200">
+            <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-amber-200 px-4 py-2">
               ✨ Our Story
             </Badge>
             <h1 className="font-serif text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -64,7 +68,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gradient-to-br from-rose-50 via-pink-50 to-amber-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -107,7 +111,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gradient-to-br from-pink-50 via-rose-50 to-amber-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-gray-900">Our Values</h2>
@@ -161,7 +165,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gradient-to-br from-rose-50 via-pink-50 to-amber-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="font-serif text-3xl lg:text-4xl font-bold text-gray-900">Meet Our Team</h2>
@@ -236,7 +240,7 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-200">
+      <footer className="bg-gradient-to-br from-pink-50 via-rose-50 to-amber-50 border-t border-pink-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
@@ -295,7 +299,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="border-t border-gray-200 mt-8 pt-8 text-center text-sm text-gray-500">
+          <div className="border-t border-pink-100 mt-8 pt-8 text-center text-sm text-gray-500">
             <p>&copy; 2024 Only for Princesses™. All rights reserved. Empowering little princesses worldwide.</p>
           </div>
         </div>
